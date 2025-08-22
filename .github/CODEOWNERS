@@ -1,0 +1,36 @@
+# CODEOWNERS file for security-server-19
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-security @Armor-test/grp-ui @Armor-test/team-logging
+
+# Directory ownership
+/pkg/ @Armor-test/team-auth @Armor-test/grp-release
+/pages/ @Armor-test/dept-data @Armor-test/team-core
+/dist/ @Armor-test/team-support @Armor-test/unit-ux
+/security/ @Armor-test/squad-network @Armor-test/unit-storage
+/styles/ @Armor-test/grp-reporting @Armor-test/unit-ux
+/docs/ @Armor-test/dept-billing @Armor-test/squad-search @Armor-test/grp-reporting
+/web/ @Armor-test/dept-reliability @Armor-test/squad-notifications
+/lib/ @Armor-test/grp-apps @Armor-test/team-research
+/api/ @Armor-test/grp-release @Armor-test/team-core
+/ui/ @Armor-test/dept-search @Armor-test/grp-apps
+/app/ @Armor-test/grp-reliability @Armor-test/squad-ui @Armor-test/dept-reliability
+/auth/ @Armor-test/team-product @Armor-test/dept-frontend
+
+# File type ownership
+*.scss @Armor-test/dept-database @Armor-test/squad-reporting
+*.sh @Armor-test/team-auth @Armor-test/dept-qa @Armor-test/dept-data
+*.swift @Armor-test/unit-storage @Armor-test/team-ux @Armor-test/squad-ui
+*.scala @Armor-test/team-metrics @Armor-test/unit-search
+*.yml @Armor-test/squad-ui @Armor-test/squad-security
+*.proto @Armor-test/dept-reliability @Armor-test/dept-payments @Armor-test/dept-ui
+*.json @Armor-test/team-qa @Armor-test/dept-reliability
+*.tsx @Armor-test/unit-logging @Armor-test/team-metrics
+*.tf @Armor-test/dept-network @Armor-test/dept-reliability
+*.kt @Armor-test/team-core @Armor-test/dept-reliability @Armor-test/grp-reporting
+*.md @Armor-test/dept-data @Armor-test/unit-storage
+
+# Security and special files
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+package.json @Armor-test/dependency-team @Armor-test/security
